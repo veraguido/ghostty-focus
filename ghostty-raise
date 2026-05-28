@@ -1,0 +1,10 @@
+#!/bin/bash
+if pgrep -x ghostty > /dev/null 2>&1; then
+    gdbus call --session \
+        --dest org.gnome.Shell \
+        --object-path /org/gnome/Shell/Extensions/GhosttyFocus \
+        --method org.gnome.Shell.Extensions.GhosttyFocus.Focus \
+        2>/dev/null
+else
+    ghostty &
+fi

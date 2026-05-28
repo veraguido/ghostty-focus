@@ -1,0 +1,7 @@
+{
+  "uuid": "ghostty-raise@local",
+  "name": "Ghostty Focus",
+  "description": "Focus Ghostty via D-Bus",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49", "50"]
+}
